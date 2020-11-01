@@ -162,7 +162,7 @@ class Board extends React.Component {
       if (gameId === this.props.gameId) {
         console.log(`reset board`);
         this.setState({
-          playerTurn: 'X',
+          playerTurn: (this.state.playerTurn==='O') ? 'O': 'X',
           squares: Array(9).fill(null),
           winner: null
         });
