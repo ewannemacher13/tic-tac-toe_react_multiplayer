@@ -34,10 +34,11 @@ function determineWinner(boardState) {
 
 function isDraw(boardState) {
   for (let i = 0; i < boardState.length; i++) {
-    if (boardState === null) {
+    if (boardState[i] === null) {
       return false;
     }
   }
+  return true;
 }
 
 function subToMove(cb) {
